@@ -9,22 +9,28 @@
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 	<style>
 		#profile {
-			position: relative;
-			float: right;
+			position: absolute;
+			/*float: right;*/
 			width: 100px;
 			height:100px;
 			
-			margin-top: -110px;
-			margin-right: -180px;
+			left: 850px;
+			top: 50px;
 			
 			border-radius: 100px;
 			border: 1px solid #373737;
+			transition: transform 1s ease;
+			-o-transition: -o-transform 1s ease;
+			-moz-transition: -moz-transform 1s ease;
 			-webkit-transition: -webkit-transform 1s ease;
 		}
 		
 		#profile:hover {
-				-webkit-transform: scale(1.2) rotate(2880deg);
-				box-shadow: 0 0 10px #0090ff;
+		    transform: scale(1.2) rotate(2880deg);
+		    -o-transform: scale(1.2) rotate(2880deg);
+		    -moz-transform: scale(1.2) rotate(2880deg);
+			-webkit-transform: scale(1.2) rotate(2880deg);
+			box-shadow: 0 0 10px #0090ff;
 		}
 	</style>
     <title>Andy on GitHub</title>
